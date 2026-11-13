@@ -1,133 +1,82 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowDownRight, ArrowUpRight, AudioLines, Cpu, Monitor, SlidersHorizontal } from "lucide-react";
+import { ArrowDownRight, ArrowUpRight, AudioLines, FileLock2, FileText, ShieldAlert } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "PROJECT: ORIGIN",
-  description: "A confidential BZaudio development initiative. A public-facing preview of the next era of live audio.",
-  metadataBase: new URL("https://origin.bzaudio.com"),
-  alternates: { canonical: "/" },
+  description: "A BZaudio initiative. Further information is currently restricted.",
   robots: { index: false, follow: false },
 };
 
-const pillars = [
-  {
-    number: "01",
-    icon: Monitor,
-    title: "Desktop platform",
-    description: "A connected software workspace for planning, managing, and shaping professional audio systems.",
-    status: "FOUNDATION IN DEVELOPMENT",
-  },
-  {
-    number: "02",
-    icon: SlidersHorizontal,
-    title: "Touchscreen controller",
-    description: "A purpose-built control surface designed to make complex audio workflows clear and immediate.",
-    status: "CONCEPT + WORKFLOW DESIGN",
-  },
-  {
-    number: "03",
-    icon: Cpu,
-    title: "Dedicated-device OS",
-    description: "A focused operating environment that brings the platform and hardware together as one coherent system.",
-    status: "ARCHITECTURE IN DEVELOPMENT",
-  },
+const archiveFiles = [
+  { id: "001", title: "INITIAL RECORD", classification: "PARTIALLY WITHHELD", note: "The opening record is available. The contents are not." },
+  { id: "002", title: "PROJECT BRIEF", classification: "RESTRICTED", note: "Additional information has not been cleared for public release." },
+  { id: "003", title: "FUTURE DIRECTIVE", classification: "SEALED", note: "This file remains closed until further notice." },
 ];
 
 export default function OriginPage() {
   return (
     <div className="origin-page">
       <section className="origin-hero">
-        <div className="origin-blueprint" aria-hidden="true">
-          <div className="origin-blueprint-frame" />
-          <div className="origin-blueprint-stage" />
-          <div className="origin-blueprint-beam beam-one" />
-          <div className="origin-blueprint-beam beam-two" />
-          <div className="origin-blueprint-floor" />
-          <span className="origin-coordinate coordinate-a">BZAUDIO / INTERNAL DEVELOPMENT</span>
-          <span className="origin-coordinate coordinate-b">PROJECT FILE / 001</span>
-        </div>
+        <div className="origin-grid-overlay" aria-hidden="true" />
         <div className="container origin-hero-inner">
-          <div className="origin-classified-row">
-            <div className="origin-kicker"><span className="origin-kicker-dot" /> BZAUDIO / ADVANCED SYSTEMS DIVISION</div>
-            <span className="origin-classified-stamp">TOP SECRET <i /> ORIGIN</span>
+          <div className="origin-topline">
+            <span className="origin-kicker"><i /> BZAUDIO / INTERNAL ARCHIVE</span>
+            <span className="origin-stamp"><ShieldAlert size={13} /> TOP SECRET</span>
           </div>
-          <p className="origin-project-label">PROJECT <span>:</span> ORIGIN</p>
-          <h1>THE FUTURE OF LIVE AUDIO IS <em>UNDER DEVELOPMENT.</em></h1>
-          <p className="origin-tagline">Where the next era of audio begins.</p>
-          <div className="origin-hero-bottom">
-            <span><i /> ACTIVE DEVELOPMENT / EARLY ARCHITECTURE</span>
-            <a href="#project-file" className="origin-scroll">OPEN THE PUBLIC BRIEF <ArrowDownRight size={15} /></a>
+          <div className="origin-hero-copy">
+            <p className="origin-file-label">SPECIAL INITIATIVE <span>/</span> FILE 001</p>
+            <h1>PROJECT<span>:</span><br />ORIGIN</h1>
+            <p className="origin-headline">THE FUTURE IS <em>UNDER DEVELOPMENT.</em></p>
+            <p className="origin-lede">Something significant is taking shape inside BZaudio. The full picture remains undisclosed. For now.</p>
+            <a className="origin-scroll-link" href="#archive">ENTER THE ARCHIVE <ArrowDownRight size={16} /></a>
           </div>
-          <div className="origin-release-strip"><span>PUBLIC RELEASE</span><span>PROJECT DETAILS PARTIALLY WITHHELD</span><span>DOCUMENT 001 / 2026</span></div>
+          <div className="origin-status-panel">
+            <div className="origin-status-head"><span>PROJECT STATUS</span><span className="origin-live-dot">● ACTIVE</span></div>
+            <strong>UNDER DEVELOPMENT</strong>
+            <div className="origin-status-rule"><i /></div>
+            <div className="origin-status-foot"><span>PUBLIC INFORMATION</span><b>LIMITED</b></div>
+          </div>
+          <div className="origin-hero-footer"><span>DOCUMENT 001 / BZAUDIO</span><span>FURTHER DETAILS WITHHELD</span><span>ACCESS: RESTRICTED</span></div>
         </div>
       </section>
 
-      <section className="origin-intro" id="project-file">
-        <div className="container origin-intro-grid">
-          <div>
-            <div className="origin-section-index">DECLASSIFIED SUMMARY / 001</div>
-            <h2>One connected system.<br /><span>Built around the show.</span></h2>
-          </div>
-          <div className="origin-intro-copy">
-            <p>PROJECT: ORIGIN is the long-term BZaudio vision: a unified audio ecosystem that brings software, a dedicated operating system, and purpose-built hardware together.</p>
-            <p>It is being developed in stages, with real-world workflows and verified equipment behavior taking priority over big promises.</p>
-            <details className="origin-access-panel">
-              <summary><span>OPEN DECLASSIFIED PROJECT BRIEF</span><ArrowUpRight size={16} /></summary>
-              <div className="origin-brief-content">
-                <span className="origin-brief-status">PUBLIC RELEASE / INTERNAL DETAILS WITHHELD</span>
-                <h3>Bring people closer to music.</h3>
-                <p>Technology should make live audio more capable without making it harder to use. ORIGIN is designed to connect system planning, show workflows, control, and hardware in one consistent experience.</p>
-                <div className="origin-redaction" aria-label="Some project details are not being disclosed"><span /><span /><span /></div>
-                <ul>
-                  <li>One coherent workflow across desktop software and dedicated devices.</li>
-                  <li>Practical tools for setup, signal flow, mixing, and system operation.</li>
-                  <li>Compatibility verified against specific console models and firmware—not assumed across an entire brand.</li>
-                </ul>
-              </div>
-            </details>
-          </div>
-        </div>
-      </section>
-
-      <section className="origin-platform">
+      <section className="origin-archive" id="archive">
         <div className="container">
-          <div className="origin-section-heading">
-            <div><div className="origin-section-index">PROGRAM OVERVIEW / THREE PILLARS</div><h2>Designed to work<br /><span>as one.</span></h2></div>
-            <p>Not three disconnected products. Three parts of a single audio environment, developed in a sequence that allows each layer to be tested before the next depends on it.</p>
+          <div className="origin-archive-heading">
+            <div>
+              <p className="origin-section-kicker">BZAUDIO / RECORDS DIVISION</p>
+              <h2>THE ORIGIN <span>ARCHIVE.</span></h2>
+            </div>
+            <p>Some records have been made visible. Their contents are another matter.</p>
           </div>
-          <div className="origin-pillar-grid">
-            {pillars.map((pillar) => {
-              const Icon = pillar.icon;
-              return (
-                <article className="origin-pillar" key={pillar.number}>
-                  <div className="origin-pillar-top"><span>{pillar.number} / 03</span><Icon size={22} strokeWidth={1.5} /></div>
-                  <h3>{pillar.title}</h3>
-                  <p>{pillar.description}</p>
-                  <div className="origin-pillar-status"><i /> {pillar.status}</div>
-                </article>
-              );
-            })}
+          <div className="origin-file-grid">
+            {archiveFiles.map((file) => (
+              <article className="origin-file" key={file.id}>
+                <div className="origin-file-top"><span>FILE / {file.id}</span><FileText size={19} /></div>
+                <h3>{file.title}</h3>
+                <div className="origin-redaction-bars" aria-hidden="true"><i /><i /><i /></div>
+                <div className="origin-file-bottom"><span>{file.classification}</span><FileLock2 size={15} /></div>
+                <details className="origin-file-details">
+                  <summary>REQUEST FILE <ArrowUpRight size={14} /></summary>
+                  <p>{file.note}</p>
+                  <span>NO FURTHER PUBLIC CONTENT</span>
+                </details>
+              </article>
+            ))}
           </div>
+          <p className="origin-archive-note"><ShieldAlert size={14} /> These are public-facing project records. Restricted labels are part of the presentation, not a security system.</p>
         </div>
       </section>
 
-      <section className="origin-compatibility">
-        <div className="container origin-compatibility-grid">
-          <div className="origin-compatibility-mark"><AudioLines size={42} strokeWidth={1.2} /><span>COMPATIBILITY<br />PROGRAM / 001</span></div>
+      <section className="origin-final">
+        <div className="container origin-final-inner">
           <div>
-            <div className="origin-section-index">FIRST COMPATIBILITY PRIORITY</div>
-            <h2>Built around real<br /><span>mixing workflows.</span></h2>
-            <p>Allen &amp; Heath consoles are the first compatibility focus. Each supported model and workflow must be verified individually, including relevant firmware and connection requirements. No blanket compatibility claim is made.</p>
-            <Link href="/tools" className="origin-inline-link">Explore current BZaudio tools <ArrowUpRight size={16} /></Link>
+            <p className="origin-section-kicker">END OF PUBLIC RECORD</p>
+            <h2>YOU HAVE ONLY<br /><span>SEEN THE BEGINNING.</span></h2>
+            <p>More will be revealed when the time is right.</p>
           </div>
-        </div>
-      </section>
-
-      <section className="origin-footer-cta">
-        <div className="container origin-footer-inner">
-          <div><div className="origin-section-index">THE WORK STARTS HERE</div><h2>Better tools.<br /><span>Better connection.</span></h2></div>
-          <Link href="/soundmatch" className="button button-primary">Explore BZaudio today <ArrowUpRight size={17} /></Link>
+          <Link href="/" className="origin-return-link">RETURN TO BZAUDIO <ArrowUpRight size={16} /></Link>
         </div>
       </section>
     </div>
