@@ -10,33 +10,28 @@ export default function HomePage() {
         <div className="hero-grid" aria-hidden="true" />
         <div className="container hero-inner">
           <div className="hero-copy">
-            <div className="eyebrow"><span className="eyebrow-dot" /> LIVE AUDIO / SYSTEMS / SOFTWARE</div>
-            <h1>Bring people closer to <span>music.</span></h1>
-            <p className="hero-lede">Thoughtful equipment, practical audio tools, and human support — built around the moments sound brings us together.</p>
+            <div className="eyebrow"><span className="eyebrow-dot" /> MULTI-BRAND AUDIO. ONE CLEAR PLAN.</div>
+            <h1>Build a sound system that <span>makes sense.</span></h1>
+            <p className="hero-lede">The right gear. The right setup. Help from people who understand audio — without making it complicated.</p>
             <div className="hero-actions">
               <Link href="/soundmatch" className="button button-primary">Build with SoundMatch <ArrowUpRight size={18} /></Link>
               <Link href="/shop" className="button button-ghost">Explore equipment <ArrowRight size={17} /></Link>
             </div>
-            <div className="hero-proof"><span><Check size={15} /> Quality before loudness</span><span><Check size={15} /> Systems that make sense</span><span><Check size={15} /> People before equipment</span></div>
+            <div className="hero-proof"><span><Check size={15} /> Multi-brand sourcing</span><span><Check size={15} /> System planning</span><span><Check size={15} /> Installation support</span></div>
           </div>
-          <div className="hero-visual hero-architecture" role="img" aria-label="Architectural visualization of a live venue stage and audience listening area">
-            <div className="architecture-halo" />
-            <div className="venue-ceiling" />
-            <div className="venue-back-wall" />
-            <div className="venue-stage"><span>LIVE / 01</span><i /></div>
-            <div className="venue-light venue-light-a" />
-            <div className="venue-light venue-light-b" />
-            <div className="venue-light venue-light-c" />
-            <div className="venue-floor" />
-            <div className="venue-audience">{[0,1,2,3,4].map((row)=><div className="venue-seat-row" key={row}>{Array.from({length:8},(_,seat)=><i key={seat}/>)}</div>)}</div>
-            <div className="architecture-readout"><span>ACOUSTIC SPACE / STUDY 01</span><b>CONNECTION IS THE POINT.</b></div>
-            <div className="architecture-caption"><span className="caption-pulse" /> LIVE SOUND / BUILT AROUND PEOPLE</div>
+          <div className="hero-visual" aria-label="Abstract audio equipment illustration">
+            <div className="visual-glow" />
+            <div className="rack rack-back"><div className="rack-line" /><div className="rack-line" /><div className="rack-line" /></div>
+            <div className="speaker speaker-left"><div className="speaker-driver driver-large" /><div className="speaker-driver driver-small" /><div className="speaker-label">BZ / 01</div></div>
+            <div className="speaker speaker-right"><div className="speaker-driver driver-large" /><div className="speaker-driver driver-small" /><div className="speaker-label">SYSTEM / READY</div></div>
+            <div className="console"><div className="console-top"><span>INPUT</span><span>LEVEL</span><span>OUTPUT</span></div><div className="console-channels">{Array.from({length:9},(_,i)=><div className="console-channel" key={i}><i /><i /><b /></div>)}</div><div className="console-footer"><span>01—09</span><span className="console-leds"><i /><i /><i /></span><span>MASTER</span></div></div>
+            <div className="visual-caption"><span className="caption-pulse" /> SIGNAL PATH / SIMPLIFIED</div>
           </div>
           <div className="hero-index">01 <span>/</span> 04</div>
         </div>
       </section>
 
-      <section className="trust-strip"><div className="container trust-inner"><span>BRING PEOPLE CLOSER TO MUSIC</span><div><b>01</b> Choose gear</div><div><b>02</b> Plan the system</div><div><b>03</b> Get it installed</div></div></section>
+      <section className="trust-strip"><div className="container trust-inner"><span>ONE PLACE FOR THE WHOLE PROJECT</span><div><b>01</b> Choose gear</div><div><b>02</b> Plan the system</div><div><b>03</b> Get it installed</div></div></section>
 
       <section className="section section-paper">
         <div className="container">
