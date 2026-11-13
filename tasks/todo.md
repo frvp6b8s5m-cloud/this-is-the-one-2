@@ -10,7 +10,7 @@
 - [x] **Task 5 — Subdomain host routing.** Added middleware so requests to `origin.bzaudio.com/` rewrite to the ORIGIN page while preserving the visible subdomain URL.
 - [x] **Task 6 — Direct navigation.** Main desktop/mobile header and footer links now point directly to `https://origin.bzaudio.com`.
 - [x] **Task 7 — Search metadata.** Added the canonical subdomain URL and disabled search indexing for the project brief.
-- [ ] **Task 8 — Hosting and DNS.** The Vercel team has no `bzaudio.com` domain attached. The domain is registered elsewhere. Vercel also requires its GitHub integration to be installed for the target repository before a linked project can be created. Then attach the subdomain, complete ownership verification, publish the exact DNS record, and confirm HTTPS.
+- [ ] **Task 8 — Hosting and DNS.** The Vercel team has no `bzaudio.com` domain attached. Its availability lookup reports that it is not available for registration; registrar ownership is not established. Vercel also requires its GitHub integration to be installed for the target repository before a linked project can be created. Then attach the subdomain, complete ownership verification, publish the exact DNS record, and confirm HTTPS.
 
 ## Phase 3: Shop motion
 - [x] **Task 9 — Shop hero animation.** Added an animated technical grid, atmospheric glow, and staggered copy entrance.
