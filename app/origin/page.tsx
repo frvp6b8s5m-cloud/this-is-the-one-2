@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowDownRight, ArrowUpRight, AudioLines, FileLock2, FileText, ShieldAlert } from "lucide-react";
+import { ArrowDownRight, ArrowUpRight, FileLock2, FileText, ShieldAlert } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "PROJECT: ORIGIN",
