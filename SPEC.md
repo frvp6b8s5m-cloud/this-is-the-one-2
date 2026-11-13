@@ -13,7 +13,7 @@ Serve beginners, volunteers, musicians, venues, houses of worship, schools, orga
 ## 3. Product capabilities
 
 ### Public website
-- Restore the original BZaudio premium black / antique-gold / warm-ivory editorial design, using Barlow Condensed, DM Sans, and Space Grotesk typography, live-audio photography, architectural grid details, and restrained motion.
+- Premium, cinematic, architectural visual direction with restrained, controlled motion.
 - Clear routes for Shop, SoundMatch, Tools, Installation, Studio, Contact, and PROJECT: ORIGIN.
 - PROJECT: ORIGIN is a direct header destination beside Shop on desktop and mobile.
 - Keep the interface uncluttered through clear hierarchy and progressive disclosure.
