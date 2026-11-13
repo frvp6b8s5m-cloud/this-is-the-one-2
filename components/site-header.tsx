@@ -6,7 +6,7 @@ import { Menu, X, AudioLines } from "lucide-react";
 
 const links: { href: string; label: string; className?: string }[] = [
   { href: "/shop", label: "Shop" },
-  { href: "/origin", label: "PROJECT: ORIGIN", className: "origin-nav-link" },
+  { href: "https://origin.bzaudio.com", label: "PROJECT: ORIGIN", className: "origin-nav-link" },
   { href: "/soundmatch", label: "SoundMatch" },
   { href: "/tools", label: "Tools" },
   { href: "/installation", label: "Installation" },
