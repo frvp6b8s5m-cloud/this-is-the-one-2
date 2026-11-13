@@ -394,3 +394,6 @@ body[data-bzaudio-theme="light"] .text-link{color:#171a1c}
 @media(max-width:900px){.venue-ceiling{right:-3%;width:98%}.venue-stage{right:12%;width:68%}.venue-audience{left:5%;right:5%}.architecture-readout{right:3%}}
 @media(max-width:680px){.hero-architecture{height:350px;transform:scale(.92);transform-origin:top center;margin:0 -12px -24px}.venue-ceiling{top:24px;height:230px;right:-4%;width:108%}.venue-back-wall{top:75px;right:4%;width:82%;height:160px}.venue-stage{top:194px;right:9%;width:72%;height:80px}.venue-audience{bottom:58px;left:1%;right:1%;gap:5px}.venue-seat-row{gap:8px}.venue-seat-row i{width:14px;height:16px}.venue-light{top:55px;height:240px}.architecture-readout{top:0;right:1%}.architecture-caption{bottom:7px;right:0;font-size:7px}}
 @media(prefers-reduced-motion:reduce){.venue-light{animation:none;opacity:.55}}
+
+@media(max-width:1040px){.main-nav{gap:16px;margin-right:16px}.main-nav a{font-size:11px}.nav-cta{padding:11px 12px;font-size:11px}}
+@media(max-width:900px){.origin-nav-link{letter-spacing:.35px}.origin-nav-link:before{margin-right:5px}}
