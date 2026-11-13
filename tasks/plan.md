@@ -62,7 +62,7 @@ Preserve the working equipment categories, SoundMatch, installation information,
 
 ## Hosting State
 - Vercel has an existing project named `bzaudio` with the Vercel-provided domain `bzaudio.vercel.app`, connected to the separate `this-is-the-one` repository.
-- The Vercel team currently has no `bzaudio.com` domain registered/attached; the domain lookup confirms it is registered elsewhere, but does not establish that this team controls it.
+- The Vercel team currently has no `bzaudio.com` domain attached. The availability lookup says the domain is not available for registration, but does not establish which registrar/account controls it.
 - Attempted to create a new Vercel Git-connected project for `this-is-the-one-2` with deployment disabled. Vercel rejected the operation because its GitHub integration is not installed for the target repository. No project was created.
 - `origin.bzaudio.com` is the selected subdomain, but it is not live until GitHub integration is connected, the correct project is deployed, domain ownership is verified, the subdomain is attached, DNS is published, and HTTPS is confirmed.
 - No DNS zone has been overwritten and no domain has been purchased.
