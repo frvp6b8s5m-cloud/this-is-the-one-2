@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, X, AudioLines } from "lucide-react";
 
-const links = [
+const links: { href: string; label: string; className?: string }[] = [
   { href: "/shop", label: "Shop" },
   { href: "/origin", label: "PROJECT: ORIGIN", className: "origin-nav-link" },
   { href: "/soundmatch", label: "SoundMatch" },
