@@ -425,3 +425,16 @@ body[data-bzaudio-theme="light"] .text-link{color:#171a1c}
 @keyframes origin-beam-pulse{from{opacity:.35}to{opacity:.95}}
 @media(prefers-reduced-motion:reduce){.shop-hero:before,.shop-hero:after,.shop-hero .eyebrow-dot,.shop-hero h1,.shop-hero p,.shop-hero .page-hero-actions,.shop-category-grid .category-card,.origin-blueprint-frame,.origin-blueprint-stage,.origin-blueprint-floor,.origin-blueprint-beam,.origin-kicker-dot{animation:none;opacity:1;transform:none}.shop-category-grid .category-card{transition:none}}
 @media(max-width:680px){.shop-hero:after{width:300px;height:300px;right:-100px;top:-90px}.shop-category-grid .category-card:hover{transform:translateY(-4px)}}
+
+/* PROJECT: ORIGIN — public-facing classified project presentation */
+.origin-classified-row{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.origin-classified-stamp{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(255,107,53,.55);padding:9px 12px;color:#ff9b78;font-size:8px;font-weight:900;letter-spacing:2px;transform:rotate(-2deg);box-shadow:0 0 22px rgba(255,107,53,.08)}
+.origin-classified-stamp i{width:4px;height:4px;border-radius:50%;background:var(--accent);box-shadow:0 0 9px var(--accent)}
+.origin-release-strip{display:flex;justify-content:space-between;gap:14px;margin-top:23px;padding-top:12px;border-top:1px solid rgba(255,255,255,.1);font-size:7px;font-weight:800;letter-spacing:1.5px;color:#6f7c7b}
+.origin-release-strip span:first-child{color:#ff9b78}
+.origin-redaction{display:flex;gap:7px;margin:18px 0}
+.origin-redaction span{display:block;width:26%;height:8px;background:#222729;border-radius:1px}
+.origin-redaction span:nth-child(2){width:18%}
+.origin-redaction span:nth-child(3){width:34%}
+@media(max-width:680px){.origin-classified-row{align-items:flex-start;flex-direction:column;gap:18px}.origin-classified-stamp{align-self:flex-end}.origin-release-strip{flex-wrap:wrap}.origin-release-strip span:last-child{display:none}}
+@media(prefers-reduced-motion:reduce){.origin-classified-stamp{transform:none}}
