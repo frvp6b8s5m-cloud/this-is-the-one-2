@@ -9,25 +9,28 @@
   - Verification: repository commands and GitHub Actions.
 
 ## Phase 2: PROJECT: ORIGIN
-- [ ] **Task 3 — Add public ORIGIN route.**
+- [x] **Task 3 — Add public ORIGIN route.** Implemented in `app/origin/page.tsx`; runtime verification remains in Task 7.
   - Acceptance: exact identity “PROJECT: ORIGIN”; tagline “Where the next era of audio begins.”; headline “THE FUTURE OF LIVE AUDIO IS UNDER DEVELOPMENT.”; honest staged vision for OS, desktop platform, and touchscreen controller.
   - Acceptance: Allen & Heath compatibility described as model-by-model validation, not universal support.
   - Verification: route renders; no fake login, security, or classified access claims.
-- [ ] **Task 4 — Add direct global navigation.**
+- [x] **Task 4 — Add direct global navigation.** Implemented beside Shop in the desktop/mobile header and added to the footer; browser verification remains in Task 7.
   - Acceptance: PROJECT: ORIGIN appears as a separate clickable header item beside Shop on desktop and mobile; footer includes a direct link.
   - Verification: keyboard and mobile navigation.
 
 ## Checkpoint: After Tasks 3–4
+- [ ] Browser/runtime and keyboard checks pending in Task 7.
 - [ ] Shop and PROJECT: ORIGIN both have direct header access.
 - [ ] Existing SoundMatch and other routes remain accessible.
 - [ ] Route interaction is keyboard accessible.
 
 ## Phase 3: Premium visual direction
-- [ ] **Task 5 — Cinematic architectural homepage lead.**
+
+Implementation is in place; responsive and reduced-motion runtime verification remains in Task 7.
+- [x] **Task 5 — Cinematic architectural homepage lead.** Implemented with a CSS architectural venue/stage/audience visual and updated purpose-led copy; visual verification remains in Task 7.
   - Acceptance: visual direction feels architectural, live-audio focused, premium, and distinct; no generic AI-looking imagery.
   - Acceptance: homepage expresses “Bring people closer to music.”
   - Verification: responsive visual inspection at 320px, 768px, 1024px, and 1440px.
-- [ ] **Task 6 — Motion and accessibility polish.**
+- [x] **Task 6 — Motion and accessibility polish.** Implemented restrained stage-light motion, reduced-motion fallback, responsive breakpoints, semantic details disclosure, and visible focus styling; manual checks remain in Task 7.
   - Acceptance: restrained animation, reduced-motion support, strong contrast, visible focus, no layout-breaking overflow.
   - Verification: keyboard pass and reduced-motion check.
 
