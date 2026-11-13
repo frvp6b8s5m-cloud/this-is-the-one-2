@@ -22,18 +22,20 @@ Transfer the approved BZaudio foundation from `frvp6b8s5m-cloud/this-is-the-one`
 - [ ] Baseline tests and build pass or existing failures are documented.
 
 ### Phase 2: PROJECT: ORIGIN entry point
-- [ ] Task 3: Add the PROJECT: ORIGIN route with its approved identity and truthful project status.
-- [ ] Task 4: Add a clearly visible PROJECT: ORIGIN header link beside Shop on desktop and mobile, plus a footer link.
+- [x] Task 3: Add the PROJECT: ORIGIN route with its approved identity and truthful project status.
+- [x] Task 4: Add a clearly visible PROJECT: ORIGIN header link beside Shop on desktop and mobile, plus a footer link.
 
 ### Checkpoint: Navigation and route
+- [ ] Runtime/keyboard verification pending. Direct navigation is implemented but not yet verified in a browser.
 - [ ] Direct navigation works on desktop and mobile.
 - [ ] ORIGIN panel interaction is keyboard accessible and does not imply real authentication.
 
 ### Phase 3: Premium visual direction
-- [ ] Task 5: Rework the homepage visual lead into a cinematic architectural live-audio environment using CSS and semantic markup, not AI-looking stock imagery.
-- [ ] Task 6: Add restrained motion, responsive behavior, and reduced-motion support while preserving existing content and functionality.
+- [x] Task 5: Rework the homepage visual lead into a cinematic architectural live-audio environment using CSS and semantic markup, not AI-looking stock imagery.
+- [x] Task 6: Add restrained motion, responsive behavior, and reduced-motion support while preserving existing content and functionality.
 
 ### Checkpoint: Visual quality
+- [ ] Runtime responsive visual verification pending.
 - [ ] Homepage clearly communicates “Bring people closer to music.”
 - [ ] Existing category, SoundMatch, installation, studio, and tools journeys remain intact.
 - [ ] Layout works at 320px, 768px, 1024px, and 1440px.
