@@ -4,9 +4,9 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, X, AudioLines } from "lucide-react";
 
-const links: { href: string; label: string; className?: string }[] = [
+const links = [
   { href: "/shop", label: "Shop" },
-  { href: "https://origin.bzaudio.com", label: "PROJECT: ORIGIN", className: "origin-nav-link" },
+  { href: "/origin", label: "PROJECT: ORIGIN", className: "origin-nav-link" },
   { href: "/soundmatch", label: "SoundMatch" },
   { href: "/tools", label: "Tools" },
   { href: "/installation", label: "Installation" },
@@ -25,7 +25,7 @@ export function SiteHeader() {
         </Link>
         <nav className={open ? "main-nav nav-open" : "main-nav"} aria-label="Main navigation">
           {links.map((link) => (
-            <Link key={link.href} href={link.href} className={link.className} onClick={() => setOpen(false)}>{link.label}</Link>
+            <Link key={link.href} href={link.href} onClick={() => setOpen(false)}>{link.label}</Link>
           ))}
           <Link href="/contact" className="mobile-quote" onClick={() => setOpen(false)}>Get a quote <span>↗</span></Link>
         </nav>
