@@ -1,47 +1,29 @@
-# BZaudio Premium Experience — Task List
+# BZaudio Shop Motion + PROJECT: ORIGIN — Task List
 
 ## Phase 1: Transfer and baseline
-- [x] **Task 1 — Copy approved source foundation.** Copied the 32-file Next.js/React/TypeScript foundation from `this-is-the-one` into this repository's feature branch. Source repository remains untouched.
-  - Acceptance: existing app routes, components, docs, tests, and package configuration are present.
-  - Verification: inspect destination tree and compare key files with source.
-- [ ] **Task 2 — Verify baseline.**
-  - Acceptance: dependencies install; tests, typecheck, lint, and build are run; failures are recorded accurately.
-  - Verification: repository commands and GitHub Actions.
+- [x] **Task 1 — Copy approved source foundation.** Copied the approved BZaudio foundation into this repository's feature branch. Source repository remains untouched.
+- [ ] **Task 2 — Verify baseline.** Run dependency installation, lint, typecheck, tests, and production build; document any existing failures.
 
-## Phase 2: PROJECT: ORIGIN
-- [x] **Task 3 — Add public ORIGIN route.** Implemented in `app/origin/page.tsx`; runtime verification remains in Task 7.
-  - Acceptance: exact identity “PROJECT: ORIGIN”; tagline “Where the next era of audio begins.”; headline “THE FUTURE OF LIVE AUDIO IS UNDER DEVELOPMENT.”; honest staged vision for OS, desktop platform, and touchscreen controller.
-  - Acceptance: Allen & Heath compatibility described as model-by-model validation, not universal support.
-  - Verification: route renders; no fake login, security, or classified access claims.
-- [x] **Task 4 — Add direct global navigation.** Implemented beside Shop in the desktop/mobile header and added to the footer; browser verification remains in Task 7.
-  - Acceptance: PROJECT: ORIGIN appears as a separate clickable header item beside Shop on desktop and mobile; footer includes a direct link.
-  - Verification: keyboard and mobile navigation.
+## Phase 2: PROJECT: ORIGIN subdomain
+- [x] **Task 3 — Dedicated project presentation.** The ORIGIN page communicates the connected desktop software, touchscreen controller, and dedicated-device OS vision.
+- [x] **Task 4 — Classified public aesthetic.** Added TOP SECRET / public-release styling, redacted visual details, and an openly accessible project brief. No fake login or security claims.
+- [x] **Task 5 — Subdomain host routing.** Added middleware so requests to `origin.bzaudio.com/` rewrite to the ORIGIN page while preserving the visible subdomain URL.
+- [x] **Task 6 — Direct navigation.** Main desktop/mobile header and footer links now point directly to `https://origin.bzaudio.com`.
+- [x] **Task 7 — Search metadata.** Added the canonical subdomain URL and disabled search indexing for the project brief.
+- [ ] **Task 8 — Hosting and DNS.** Attach the subdomain to the correct Vercel production project, complete ownership verification, publish the exact DNS record, and confirm HTTPS. The Vercel team currently has no `bzaudio.com` domain attached.
 
-## Checkpoint: After Tasks 3–4
-- [ ] Browser/runtime and keyboard checks pending in Task 7.
-- [ ] Shop and PROJECT: ORIGIN both have direct header access.
-- [ ] Existing SoundMatch and other routes remain accessible.
-- [ ] Route interaction is keyboard accessible.
-
-## Phase 3: Premium visual direction
-
-Shop and ORIGIN motion implementation is in place; responsive and reduced-motion runtime verification remains in Task 7. Homepage redesign is out of scope.
-- [ ] **Task 5 — Keep the homepage unchanged.** The earlier homepage experiment was reverted. Acceptance: existing homepage markup and design remain as in the source project.
-  - Acceptance: visual direction feels architectural, live-audio focused, premium, and distinct; no generic AI-looking imagery.
-  - Acceptance: homepage expresses “Bring people closer to music.”
-  - Verification: responsive visual inspection at 320px, 768px, 1024px, and 1440px.
-- [x] **Task 6 — Shop and PROJECT: ORIGIN motion.** Added animated Shop hero lighting/grid, staggered category-card entrance, interactive card sweeps/hover motion, and slow ORIGIN blueprint/beam motion with reduced-motion fallbacks.
-  - Acceptance: restrained animation, reduced-motion support, strong contrast, visible focus, no layout-breaking overflow.
-  - Verification: keyboard pass and reduced-motion check.
+## Phase 3: Shop motion
+- [x] **Task 9 — Shop hero animation.** Added an animated technical grid, atmospheric glow, and staggered copy entrance.
+- [x] **Task 10 — Category-card motion.** Added staggered entrances, hover lift, light sweep, animated edge reveal, icon movement, and arrow movement.
+- [x] **Task 11 — Brand list interaction.** Added restrained hover feedback.
+- [x] **Task 12 — Accessibility and mobile.** Added reduced-motion fallbacks and mobile-specific adjustments.
+- [x] **Task 13 — Keep homepage unchanged.** The homepage was restored to match the source project's original file; no homepage redesign is part of this scope.
 
 ## Phase 4: Quality and review
-- [ ] **Task 7 — Quality gates.**
-  - Acceptance: lint, typecheck, tests, and production build pass; regressions fixed or clearly documented.
-  - Verification: exact command output and route smoke checks.
-- [ ] **Task 8 — Documentation and review summary.**
-  - Acceptance: README/spec/plan describe actual delivered state; review summary lists changed files and known limits.
-  - Verification: diff review.
+- [ ] **Task 14 — Quality gates.** Run lint, typecheck, tests, production build, and focused browser/runtime checks. Do not mark successful until verified.
+- [ ] **Task 15 — Final review.** Inspect the full diff and confirm only approved Shop/ORIGIN work and relevant documentation changed.
 
 ## Final checkpoint
-- [ ] All criteria met; ready for user review.
-- [ ] Do not merge to main, deploy, configure a subdomain, or change DNS without separate approval.
+- [ ] All tests and production build pass or remaining failures are clearly documented.
+- [ ] Vercel custom domain and DNS verified.
+- [ ] Changes are ready for user review on the feature branch; do not merge or promote to production until quality checks are complete.
