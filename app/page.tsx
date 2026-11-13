@@ -1,7 +1,7 @@
 import Link from "next/link";
 import {
-  ArrowDownRight, ArrowUpRight, AudioLines, Cable, Check,
-  GraduationCap, Monitor, Settings2, SlidersHorizontal, Speaker, Wrench,
+  ArrowUpRight, AudioLines, GraduationCap, Monitor, Settings2,
+  SlidersHorizontal, Speaker, Wrench,
 } from "lucide-react";
 import { categories, plannedBrands } from "@/lib/catalog";
 
