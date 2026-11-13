@@ -5,8 +5,6 @@ import { ArrowDownRight, ArrowUpRight, AudioLines, Cpu, Monitor, SlidersHorizont
 export const metadata: Metadata = {
   title: "PROJECT: ORIGIN",
   description: "A confidential BZaudio development initiative. A public-facing preview of the next era of live audio.",
-  metadataBase: new URL("https://origin.bzaudio.com"),
-  alternates: { canonical: "/" },
   robots: { index: false, follow: false },
 };
 
