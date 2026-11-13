@@ -9,7 +9,8 @@ Create a clear starting point for customers who need professional audio equipmen
 3. Audio professionals who want a sourcing and planning partner.
 
 ## Current website scope
-- Responsive homepage explaining the BZaudio offer.
+- Responsive homepage expressing the BZaudio purpose: bring people closer to music.
+- PROJECT: ORIGIN public project page for the long-term connected audio ecosystem, directly reachable from the global header.
 - Equipment category discovery without fabricated listings.
 - Installation and service overview.
 - Contact brief builder that prepares a copyable inquiry locally.
