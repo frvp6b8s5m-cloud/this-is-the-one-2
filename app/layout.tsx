@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./original-design.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s | BZaudio",
   },
   description:
-    "Multi-brand professional audio equipment sourcing, practical system planning, and installation support.",
+    "Professional audio equipment, practical system planning, browser-based tools, and installation support.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
