@@ -10,7 +10,7 @@ BZaudio is an independent audio technology company and multi-brand professional-
 - **Tools** — use browser-based audio utilities and calculators.
 - **Installation** — explore system planning, setup, and support.
 - **Studio** — customize and compare a workspace concept.
-- **PROJECT: ORIGIN** — the long-term vision for a connected BZaudio software, controller, and dedicated-device OS ecosystem.
+- **PROJECT: ORIGIN** — a confidential BZaudio development initiative with a public-facing project brief at [origin.bzaudio.com](https://origin.bzaudio.com).
 
 ## Run locally
 Requirements: Node.js 24 and npm.
@@ -35,6 +35,8 @@ npm run build
 - SoundMatch creates preliminary equipment-role plans, not final engineering approval or acoustic predictions.
 - Quote briefs are prepared locally for copying; no request is transmitted or stored.
 - Allen & Heath compatibility is validated model by model. No universal support is implied.
+- PROJECT: ORIGIN uses a classified visual presentation, but its public brief is not a real security boundary or protected system. Search indexing is disabled for the public-facing project page.
+- The ORIGIN subdomain requires the apex domain to be verified with the hosting provider and the corresponding DNS record to be published before it resolves publicly.
 - No customer accounts, payment processing, backend persistence, or external integrations are enabled.
 
 ## Project documents
