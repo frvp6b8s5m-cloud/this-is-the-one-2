@@ -1,6 +1,6 @@
 import Link from "next/link";
 import {
-  ArrowUpRight, AudioLines, GraduationCap, Monitor, Settings2,
+  ArrowUpRight, AudioLines, GraduationCap, Monitor,
   SlidersHorizontal, Speaker, Wrench,
 } from "lucide-react";
 import { categories, plannedBrands } from "@/lib/catalog";
@@ -169,13 +169,13 @@ export default function HomePage() {
       <section className="contact section-pad">
         <div className="container contact-grid">
           <div className="contact-heading">
-            <p className="eyebrow">Let's get started</p>
+            <p className="eyebrow">Let&apos;s get started</p>
             <h2>What are you<br />working on?</h2>
             <p>Equipment sourcing, a new system, an upgrade, or a workflow question. Tell us what you are trying to accomplish and we can help map the next step.</p>
           </div>
           <div className="contact-heading">
             <p className="eyebrow">Start with a clear plan</p>
-            <h2>Let's make<br />it happen.</h2>
+            <h2>Let&apos;s make<br />it happen.</h2>
             <Link href="/contact" className="button button-primary">Contact BZaudio <ArrowUpRight size={17} /></Link>
             <p className="small-note">No fake inventory or checkout. Product details and quotes are confirmed with you before purchase.</p>
           </div>
