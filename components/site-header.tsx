@@ -25,7 +25,7 @@ export function SiteHeader() {
         </Link>
         <nav className={open ? "main-nav nav-open" : "main-nav"} aria-label="Main navigation">
           {links.map((link) => (
-            <Link key={link.href} href={link.href} className={link.className} onClick={() => setOpen(false)}>{link.label}</Link>
+            <Link key={link.href} href={link.href} onClick={() => setOpen(false)}>{link.label}</Link>
           ))}
           <Link href="/contact" className="mobile-quote" onClick={() => setOpen(false)}>Get a quote <span>↗</span></Link>
         </nav>
