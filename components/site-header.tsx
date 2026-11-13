@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { Menu, X, AudioLines } from "lucide-react";
 
 const links = [
   { href: "/shop", label: "Shop" },
@@ -18,19 +19,20 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <div className="container nav-wrap">
-        <Link href="/" className="brand" aria-label="BZaudio home" onClick={() => setOpen(false)}>
-          <span className="brand-mark" aria-hidden="true"><span /><span /><span /></span>
-          <span className="brand-word">BZ<span>audio</span></span>
+        <Link href="/" className="brand-mark" aria-label="BZaudio home" onClick={() => setOpen(false)}>
+          <span className="brand-icon"><AudioLines size={21} strokeWidth={2.4} /></span>
+          <span>BZ<span className="brand-light">audio</span></span>
         </Link>
-        <button className="menu-toggle" aria-label={open ? "Close navigation" : "Open navigation"} aria-expanded={open} aria-controls="primary-nav" onClick={() => setOpen(!open)}>
-          <span /><span />
-        </button>
-        <nav className={open ? "nav-links open" : "nav-links"} id="primary-nav" aria-label="Main navigation">
+        <nav className={open ? "main-nav nav-open" : "main-nav"} aria-label="Main navigation">
           {links.map((link) => (
             <Link key={link.href} href={link.href} className={link.className} onClick={() => setOpen(false)}>{link.label}</Link>
           ))}
-          <Link href="/contact" className="nav-cta" onClick={() => setOpen(false)}>Get a quote <span>↗</span></Link>
+          <Link href="/contact" className="mobile-quote" onClick={() => setOpen(false)}>Get a quote <span>↗</span></Link>
         </nav>
+        <Link href="/contact" className="nav-cta">Get a quote <span>↗</span></Link>
+        <button className="menu-toggle" aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open} onClick={() => setOpen(!open)}>
+          {open ? <X size={22} /> : <Menu size={22} />}
+        </button>
       </div>
     </header>
   );
