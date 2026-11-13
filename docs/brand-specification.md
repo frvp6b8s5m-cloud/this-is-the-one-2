@@ -18,11 +18,12 @@ Make audio technology more useful and understandable so people can connect throu
 - Avoid inflated performance claims, unexplained jargon, false urgency, and unsupported universal claims.
 
 ## Visual direction
-- Restore the original BZaudio website identity: premium black and warm antique-gold, with warm ivory/paper content sections.
-- Use the original editorial design language: oversized Barlow Condensed display typography, DM Sans body copy, Space Grotesk technical labels, full-bleed live-audio photography, precise grid details, and strong asymmetric layouts.
-- Keep the experience cinematic and architectural, but not visually crowded. Use deliberate spacing, clear hierarchy, and progressive disclosure.
-- Motion should be restrained and purposeful; respect reduced-motion preferences.
+- Cinematic, architectural, and live-audio focused.
+- Dark graphite and deep neutral surfaces, warm off-white content areas, and a restrained warm accent.
+- Strong typography, clear spacing, purposeful technical diagrams, and a premium editorial hierarchy.
+- Controlled motion that supports the experience; respect reduced-motion preferences.
 - Avoid generic AI-looking imagery and manufacturer imagery/logos that could imply an unconfirmed partnership.
+- Keep pages uncluttered: reveal advanced detail progressively rather than placing everything on screen at once.
 
 ## Brand architecture
 - **BZaudio Supply:** Multi-brand equipment sourcing and category discovery.
