@@ -25,12 +25,12 @@
 
 ## Phase 3: Premium visual direction
 
-Implementation is in place; responsive and reduced-motion runtime verification remains in Task 7.
-- [x] **Task 5 — Cinematic architectural homepage lead.** Implemented with a CSS architectural venue/stage/audience visual and updated purpose-led copy; visual verification remains in Task 7.
+Shop and ORIGIN motion implementation is in place; responsive and reduced-motion runtime verification remains in Task 7. Homepage redesign is out of scope.
+- [ ] **Task 5 — Keep the homepage unchanged.** The earlier homepage experiment was reverted. Acceptance: existing homepage markup and design remain as in the source project.
   - Acceptance: visual direction feels architectural, live-audio focused, premium, and distinct; no generic AI-looking imagery.
   - Acceptance: homepage expresses “Bring people closer to music.”
   - Verification: responsive visual inspection at 320px, 768px, 1024px, and 1440px.
-- [x] **Task 6 — Motion and accessibility polish.** Implemented restrained stage-light motion, reduced-motion fallback, responsive breakpoints, semantic details disclosure, and visible focus styling; manual checks remain in Task 7.
+- [x] **Task 6 — Shop and PROJECT: ORIGIN motion.** Added animated Shop hero lighting/grid, staggered category-card entrance, interactive card sweeps/hover motion, and slow ORIGIN blueprint/beam motion with reduced-motion fallbacks.
   - Acceptance: restrained animation, reduced-motion support, strong contrast, visible focus, no layout-breaking overflow.
   - Verification: keyboard pass and reduced-motion check.
 
