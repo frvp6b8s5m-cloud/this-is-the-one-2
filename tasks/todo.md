@@ -1,8 +1,8 @@
 # BZaudio Shop Motion + PROJECT: ORIGIN — Task List
 
 ## Phase 1: Transfer and baseline
-- [x] **Task 1 — Copy approved source foundation.** Copied the approved BZaudio foundation into this repository's feature branch. Source repository remains untouched.
-- [x] **Task 2 — Automated baseline.** GitHub Actions completed dependency installation, lint, typecheck, tests, and production build successfully on the latest feature-branch commit.
+- [x] **Task 1 — Copy approved source foundation.** Copied the approved BZaudio foundation into this repository's feature branch and merged the approved work to this repository's `main`. Source repository remains untouched.
+- [x] **Task 2 — Automated baseline.** GitHub Actions completed dependency installation, lint, typecheck, tests, and production build successfully on the latest feature-branch commit. A post-merge main-branch run is underway.
 
 ## Phase 2: PROJECT: ORIGIN subdomain
 - [x] **Task 3 — Dedicated project presentation.** The ORIGIN page communicates the connected desktop software, touchscreen controller, and dedicated-device OS vision.
@@ -28,4 +28,5 @@
 - [x] Automated tests and production build pass.
 - [ ] Vercel GitHub integration, custom domain, DNS, and HTTPS verified.
 - [ ] Manual browser checks completed.
+- [x] Approved changes merged to `main` at `9c1d21241c1a51a7b8c9da5015f211b0ad21709e`.
 - [ ] Ready for production promotion after hosting and manual verification.
