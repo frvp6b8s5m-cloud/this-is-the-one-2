@@ -8,7 +8,7 @@ Preserve the working equipment categories, SoundMatch, installation information,
 
 ## Architecture Decisions
 - Keep the existing Next.js App Router, React, TypeScript, Tailwind, and CSS architecture.
-- Keep all changes on `feat/bzaudio-premium-rendition`; leave the source repository and destination `main` unchanged until review and hosting prerequisites are complete.
+- Implement on `feat/bzaudio-premium-rendition`, run CI, then squash-merge the approved changes into this repository's `main`. The separate source repository remains untouched.
 - Serve the existing ORIGIN page at `/origin` on the main app and rewrite the root request on `origin.bzaudio.com` to that page.
 - Link to the ORIGIN subdomain directly from the main desktop/mobile header and footer.
 - The subdomain uses the same app deployment; it does not create a separate product codebase.
@@ -29,7 +29,7 @@ Preserve the working equipment categories, SoundMatch, installation information,
 - [x] Task 5: Add host-based rewrite from `origin.bzaudio.com/` to the ORIGIN page.
 - [x] Task 6: Point desktop/mobile header and footer links directly to the subdomain.
 - [x] Task 7: Add canonical metadata and disable search indexing for the ORIGIN brief.
-- [ ] Task 8: Attach and verify the custom subdomain in Vercel and publish its DNS record. The Vercel team currently has no `bzaudio.com` domain registered/attached. A new Vercel project link also requires the GitHub integration to be installed for the target repository.
+- [ ] Task 8: Attach and verify the custom subdomain in Vercel and publish its DNS record. The Vercel team currently has no `bzaudio.com` domain attached. A new Vercel project link also requires the GitHub integration to be installed for the target repository.
 
 ### Phase 3: Premium Shop motion
 - [x] Task 9: Add Shop-only animated grid and hero lighting.
@@ -64,5 +64,6 @@ Preserve the working equipment categories, SoundMatch, installation information,
 - Vercel has an existing project named `bzaudio` with the Vercel-provided domain `bzaudio.vercel.app`, connected to the separate `this-is-the-one` repository.
 - The Vercel team currently has no `bzaudio.com` domain attached. The availability lookup says the domain is not available for registration, but does not establish which registrar/account controls it.
 - Attempted to create a new Vercel Git-connected project for `this-is-the-one-2` with deployment disabled. Vercel rejected the operation because its GitHub integration is not installed for the target repository. No project was created.
+- The changes are merged into `main` at commit `9c1d21241c1a51a7b8c9da5015f211b0ad21709e`. The post-merge main-branch CI run is still in progress.
 - `origin.bzaudio.com` is the selected subdomain, but it is not live until GitHub integration is connected, the correct project is deployed, domain ownership is verified, the subdomain is attached, DNS is published, and HTTPS is confirmed.
 - No DNS zone has been overwritten and no domain has been purchased.
