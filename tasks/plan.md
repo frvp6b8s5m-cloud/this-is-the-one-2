@@ -1,6 +1,8 @@
 # Implementation Plan: BZaudio Premium Experience + PROJECT: ORIGIN
 
 ## Overview
+
+**Current implementation scope (user clarification):** animate the existing Shop experience and deliver PROJECT: ORIGIN. Leave the existing homepage and unrelated sections unchanged.
 Transfer the approved BZaudio foundation from `frvp6b8s5m-cloud/this-is-the-one` into this repository, then improve the visual direction and add PROJECT: ORIGIN as a first-class destination. Preserve the working equipment categories, SoundMatch, installation information, studio customizer, and browser-based audio tools.
 
 ## Architecture Decisions
@@ -31,14 +33,14 @@ Transfer the approved BZaudio foundation from `frvp6b8s5m-cloud/this-is-the-one`
 - [ ] ORIGIN panel interaction is keyboard accessible and does not imply real authentication.
 
 ### Phase 3: Premium visual direction
-- [x] Task 5: Rework the homepage visual lead into a cinematic architectural live-audio environment using CSS and semantic markup, not AI-looking stock imagery.
-- [x] Task 6: Add restrained motion, responsive behavior, and reduced-motion support while preserving existing content and functionality.
+- [ ] Task 5: Keep the existing homepage design unchanged; do not include homepage redesign in this work.
+- [x] Task 6: Add motion only to the Shop and PROJECT: ORIGIN experiences, with responsive behavior and reduced-motion support.
 
 ### Checkpoint: Visual quality
 - [ ] Runtime responsive visual verification pending.
-- [ ] Homepage clearly communicates “Bring people closer to music.”
+- [ ] Existing homepage visual design remains unchanged.
 - [ ] Existing category, SoundMatch, installation, studio, and tools journeys remain intact.
-- [ ] Layout works at 320px, 768px, 1024px, and 1440px.
+- [ ] Shop and PROJECT: ORIGIN layouts work at 320px, 768px, 1024px, and 1440px.
 
 ### Phase 4: Quality and review
 - [ ] Task 7: Run lint, typecheck, tests, production build, and focused browser/runtime checks; resolve regressions.
