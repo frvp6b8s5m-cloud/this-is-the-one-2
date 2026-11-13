@@ -11,7 +11,7 @@ export function SiteFooter() {
         </div>
         <div className="footer-links">
           <Link href="/shop">Shop categories</Link>
-          <Link href="/origin">PROJECT: ORIGIN</Link>
+          <Link href="https://origin.bzaudio.com">PROJECT: ORIGIN</Link>
           <Link href="/soundmatch">Build with SoundMatch</Link>
           <Link href="/installation">Installation</Link>
           <Link href="/studio">Personalize your workspace</Link>
