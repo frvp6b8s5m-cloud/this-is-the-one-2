@@ -50,4 +50,4 @@ Vercel hosting (pending GitHub integration authorization)
 - Email or CRM submission only after the destination and consent flow are confirmed.
 
 ## Deployment boundary
-The application is currently developed on `planning/bzaudio-foundation`. The existing `main` branch is intentionally unchanged. Vercel project creation and preview deployment are pending the repository's GitHub integration authorization. Do not promote or merge to production without explicit release approval.
+The destination application is being improved on `feat/bzaudio-premium-rendition`, copied from `frvp6b8s5m-cloud/this-is-the-one`. The source repository and destination `main` branch are intentionally unchanged. Hosting and preview deployment are not part of this implementation step. Do not merge or deploy without explicit release approval.
